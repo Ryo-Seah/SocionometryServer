@@ -9,6 +9,7 @@ import morgan from "morgan";
 import path from "path";
 import { fileURLToPath } from "url";
 import exp from "constants";
+import authroutes from "./routes/auth.js";
 import { register } from "./controllers/auth.js";
 
 //config
