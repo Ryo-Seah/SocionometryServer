@@ -29,6 +29,9 @@ app.use("/assets", express.static(path.join(__dirname, 'public/assets')));
 //routes with files
 app.post("/auth/register", upload.single("picture"), register);
 
+//routes
+app.use("/auth", authroutes);
+
 // file storage
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
